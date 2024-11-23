@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build && cp ./tpdf ./output/",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -12,7 +12,13 @@
   "dependencies": {
     "@heroicons/vue": "^2.1.5",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "docx-pdf": "^0.0.1",
+    "formidable": "^3.5.2",
+    "hummus": "^1.0.117",
+    "libreoffice-convert": "^1.6.0",
+    "node-qpdf2-with-qpdf": "^0.0.1",
     "nuxt": "^3.13.0",
+    "pdf-lib": "^1.17.1",
     "puppeteer": "^23.4.0",
     "vue": "latest",
     "vue-router": "latest"
