@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build && cp ./tpdf ./output/",
+    "build": "nuxt build && cp ./tpdf ./.nuxt/dist/server && cp ./tpdf ./.nuxt/dist",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -14,8 +14,6 @@
     "@nuxtjs/tailwindcss": "^6.12.1",
     "docx-pdf": "^0.0.1",
     "formidable": "^3.5.2",
-    "hummus": "^1.0.117",
-    "libreoffice-convert": "^1.6.0",
     "node-qpdf2-with-qpdf": "^0.0.1",
     "nuxt": "^3.13.0",
     "pdf-lib": "^1.17.1",
